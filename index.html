@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>landing page - portfolio</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-200">
+	<div class="container mx-auto px-3 lg:px-0 relative">
+		<header class="h-[60px] lg:h-[80px] flex items-center justify-between gap-3 relative lg:px-5">
+			<a class="font-bold text-lg md:text-[1.5rem] lg:text-[1.9rem] hover:text-gray-700" href="#logo">Lucas.</a>
+			<nav class="absolute z-5 top-0 left-0 w-full bg-gray-300 flex flex-col gap-6 rounded-md shadow-md shadow-gray-100 overflow-hidden h-0 p-0 transition-[height] transition-[padding]
+			
+			lg:static lg:h-fit lg:bg-transparent lg:shadow-none lg:flex-row lg:w-fit lg:p-0 lg:items-center lg:gap-10
+			" data-status="closed" id="navbar">
+				<a class="nav-item hover:scale-[1.01] font-[500] lg:text-[1.3rem]" href="#">Portfolio</a>
+				<a class="nav-item hover:scale-[1.01] font-[500] lg:text-[1.3rem]" href="#">About Us</a>
+				<a class="nav-item hover:scale-[1.01] font-[500] lg:text-[1.3rem]" href="#">Join Us</a>
+				<a class="nav-item hover:scale-[1.01] font-[500] lg:text-[1.3rem]" href="#">News & Events</a>
+			</nav>
+			<a class="border-1 w-[100px] h-[35px] rounded-[3rem] me-15 text-md font-semibold lg:w-[160px] lg:h-[55px] lg:text-lg flex items-center justify-center hover:cursor-pointer hover:bg-gray-100/10 hover:scale-[1.0099]" id="register-button">register</a>
+		</header>
+
+		<span class="w-[30px] h-[20px] flex flex-col justify-between absolute z-10 top-[20px] right-[22px] hover:cursor-pointer lg:hidden" id="hamburger-button">
+			<span class="bar h-[2px] bg-gray-900"></span>
+			<span class="bar h-[2px] bg-gray-900"></span>
+			<span class="bar h-[2px] bg-gray-900"></span>
+		</span>
+
+		<!-- [< hero section >] -->
+		 <div class="page py-3 bg-blue-400" id="hero-section"></div>
+	</div>
+	<script type="module" src="components/navbar.js"></script>
+</body>
+</html>
