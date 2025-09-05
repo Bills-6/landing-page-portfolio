@@ -17,7 +17,11 @@ document.addEventListener("click", (isClick)=> {
 // [< close navbar if user click escaoe >]
 document.addEventListener("keydown", (isKey)=> {
 	if (isKey.key === "Escape") navbarDoor("close");
-	if (isKey.key === "b" || isKey.key === "B") navbarDoor("open");
+	if (isKey.key === "b" || isKey.key === "B") {
+		if (navbar.dataset.status === "closed") {
+			navbarDoor("open");
+		} else navbarDoor("close");
+	}
 })
 
 function navbarDoor(forWhat) {
