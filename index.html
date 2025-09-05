@@ -8,6 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body class="bg-gray-200">
 	<div class="container mx-auto px-3 lg:px-0 relative">
@@ -33,7 +34,23 @@
 
 		<!-- [< hero section >] -->
 		 <div class="page py-3 bg-blue-400" id="hero-section">
-			<div class="wrapper-page flex flex-col"></div>
+			<div class="wrapper-page flex flex-col lg:flex-row">
+				<div class="hero-content py-2 w-full lg:w-[50%] bg-orange-300">
+					<span class="text relative after:content-[''] after:absolute after:w-[60px] after:h-[1px] after:bg-gray-900 after:left-0 after:top-[50%] after:translate-y-[-50%] ps-18 text-sm mb-5 block w-fit">20 CITES AND GROWING</span>
+
+					<h1 class="text-[2rem] font-bold leading-9 mb-4">Being Founders Takes guts</h1>
+					<p class="leading-8 font-light mb-4">Knowing Your risk tolerance can serve as on internal compass, guilding your business growth decisions.</p>
+					<div class="cta flex items-center justify-between">
+						<a class="w-full h-[50px] bg-gray-900 text-gray-100 flex items-center justify-center rounded-[3rem] hover:bg-gray-800" href="#" id="book-demo">Book Demo</a>
+						<div class="flex items-center gap-3">
+							<span class="flex items-center justify-center bg-gray-900 hover:bg-gray-800 hover:cursor-pointer" id="wathc-button">
+								<i class=""></i>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="hero-image"></div>
+			</div>
 		 </div>
 	</div>
 	<script type="module" src="components/navbar.js"></script>
