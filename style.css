@@ -4,3 +4,16 @@
 	--font: 'Funnel Sans';
 }
 * { font-family: var(--font); }
+.border-image {
+	border: 1px solid #242424;
+	border-radius: 10rem;
+	padding: 1.55rem;
+	overflow: hidden;
+}
+
+.border-image > img {
+	width: 100%;
+	height: 100%;
+	filter: grayscale(1);
+	border-radius: 10rem;
+}
